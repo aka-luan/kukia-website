@@ -1,9 +1,4 @@
 <header>
-  <div class="announcement">
-    <div class="container d-flex justify-content-between">
-
-    </div>
-  </div>
   <nav class="container">
     <div class="nav__logo">
       <?php the_custom_logo();
