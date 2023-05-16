@@ -9,7 +9,7 @@ footer {
     
     .row {
       padding-top: 28px;
-      flex: 2;
+      flex: 1.5;
     }
 
     .footer__list {
@@ -45,7 +45,7 @@ footer {
       div {
         position: absolute;
         top: 2rem ;
-        left: 8rem;
+        left: 11rem;
 
         span {
           font-size: 60px;
@@ -61,6 +61,8 @@ footer {
         object-fit: cover;
         width: 350px;
         height: 300px;
+
+        box-shadow: 0 0.2rem 1.2rem rgba(0,0,0,0.2);
       }
     }
   }
