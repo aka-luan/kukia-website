@@ -1,1 +1,67 @@
-// Footer styles
+footer {
+  height: 360px;
+  margin-top: 15rem;
+  color: color(--primary);
+
+  .footer__content {
+    display: flex;
+    justify-content: space-between;
+    
+    .row {
+      padding-top: 28px;
+      flex: 2;
+    }
+
+    .footer__list {
+      font-size: 16px;
+
+      &,
+      ul {
+        display: flex;
+        flex-direction: column;
+        gap: 16px;
+
+        li {
+          display: flex;
+          align-items: center;
+
+          i {
+            padding-right: 5px;
+          }
+        }
+      }
+
+      h4 {
+        font-size: 24px;
+        font-weight: 700;
+      }
+    }
+    .footer__img {
+      flex: 1;
+      display: flex;
+      justify-content: flex-end;
+      position: relative;
+
+      div {
+        position: absolute;
+        top: 2rem ;
+        left: 8rem;
+
+        span {
+          font-size: 60px;
+          font-weight: 700;
+
+          &:nth-child(1n+3) {
+            color: color(--bg);
+          }
+        }
+      }
+
+      img {
+        object-fit: cover;
+        width: 350px;
+        height: 300px;
+      }
+    }
+  }
+}
