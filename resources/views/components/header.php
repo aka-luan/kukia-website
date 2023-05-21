@@ -13,7 +13,14 @@
           <button type="button" id="close_menu" onclick="kukia.closeNav()">
             <i class="fas fa-times fa-lg"></i>
           </button>
-          <ul>
+          <ul class="fs_menu__social">
+            <li><a href="#"><i class="fab fa-instagram fa-lg"></i></a></li>
+            <li><a href="#"><i class="fab fa-twitter fa-lg"></i></a></li>
+            <li><a href="#"><i class="fab fa-facebook fa-lg"></i></a></li>
+            <li><a href="#"><i class="fab fa-tiktok fa-lg"></i></a></li>
+          </ul>
+
+          <ul class="fs_menu__items">
             <li><a href="#">Home</a></li>
             <li><a href="#">About</a></li>
             <li><a href="#">Portfolio</a></li>
