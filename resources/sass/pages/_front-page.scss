@@ -4,48 +4,51 @@ main {
   .hero {
     position: relative;
     text-align: center;
-    height: calc(100vh - 192px);
     display: flex;
     flex-direction: column;
     align-items: center;
     
-    @include media(lg) {
-      padding-top: 135px;
+    @include for-tablet-portrait-up() {
+      padding-top: 13.5rem;
     }
     
-    @include media(xl) {
-      padding-top: 100px;
+    @include for-tablet-landscape-up() {
+      padding-top: 10rem;
+      height: 60rem;
     }
-
+    
+    @include for-desktop-up() {
+      height: 100vh;
+    }
 
     .hero__heading {
       font-weight: 700;
       text-transform: uppercase;
 
-      @include media(lg) {
-        font-size: 92px;
-      }
-      
-      @include media(xl) {
-        font-size: 112px;
+      @include for-tablet-portrait-up() {
+        font-size: 7rem;
       }
 
-      @include media(xxl) {
-        font-size: 125px;
+      @include for-desktop-up() {
+        font-size: 10rem;
+      }
+
+      @include for-big-desktop-up() {
+        font-size: 12.5rem;
       }
     }
 
     .hero__subheading {
       width: 33%;
       font-weight: 400;
-      margin-top: 100px;
+      margin-top: 15rem;
 
-      @include media(xl) {
-        font-size: 24px;
+      @include for-tablet-landscape-up() {
+        font-size: 2rem;
       }
-      
-      @include media(xxl) {
-        font-size: 28px;
+
+      @include for-big-desktop-up() {
+        font-size: 2.8rem;
       }
     }
 
@@ -54,51 +57,65 @@ main {
       justify-content: space-between;
 
       div {
-        background-color: white ;
-        padding: 10px 10px 50px 10px;
+        background-color: white;
+        padding: 1rem 1rem 5rem 1rem;
         position: absolute;
-        bottom: 15rem;
-        box-shadow: 0 0.2rem 1.2rem rgba(0,0,0,0.2);
+        box-shadow: 0 0.2rem 1.2rem rgba(0, 0, 0, 0.2);
         
+        @include for-tablet-landscape-up() {
+          bottom: 10rem;
+        }
+        
+        @include for-desktop-up() {
+          bottom: 15rem;
+        }
 
         img {
           object-fit: cover;
-          width: 300px;
-          height: 250px;
+          width: 20rem;
+          height: 15rem;
+
+          @include for-tablet-landscape-up() {
+            width: 25rem;
+            height: 20rem;
+          }
+
+          @include for-desktop-up() {
+            width: 30rem;
+            height: 25rem;
+          }
         }
       }
 
       div:nth-child(1) {
         rotate: -15deg;
 
-        @include media(lg){ 
-          left: -15rem;
-        }
-        
-        @include media(xl){ 
-          left: -15rem;
-        }
-        
-        @include media(xxl) {
+        @include for-tablet-portrait-up() {
           left: 0rem;
         }
 
+        @include for-tablet-landscape-up() {
+          left: -15rem;
+        }
+
+        @include for-desktop-up() {
+          left: -5rem;
+        }
       }
 
       div:nth-child(2) {
         rotate: 15deg;
 
-        @include media(lg){ 
-          right: -15rem;
-        }
-        
-        @include media(xl){ 
-          right: -15rem;
-        }
-        
-        @include media(xxl) {
+        @include for-tablet-portrait-up() {
           right: 0rem;
-          
+        }
+
+        @include for-tablet-landscape-up() {
+          right: -15rem;
+        }
+
+        @include for-desktop-up() {
+          right: -5rem;
         }
       }
     }
@@ -122,21 +139,21 @@ main {
       span {
         display: flex;
         align-items: baseline;
-        width: 550px;
-        padding: 36px 0px;
-        gap: 50px;
+        width: 55rem;
+        padding: 3.6rem 0px;
+        gap: 5rem;
       }
 
       p,
       i {
-        font-size: 40px;
+        font-size: 4rem;
         text-transform: uppercase;
       }
     }
   }
 
   .recent_work {
-    margin-top: 25rem;
+    margin-top: 2.5rem;
     display: flex;
     justify-content: center;
     flex-direction: column;
@@ -169,7 +186,7 @@ main {
         &:nth-child(5) {
           img {
             width: 100%;
-            height: 400px;
+            height: 40rem;
           }
         }
 
@@ -185,24 +202,23 @@ main {
         &:nth-child(1) {
           grid-column: 1 / 2;
           grid-row: 1;
-          
         }
 
         &:nth-child(2) {
           grid-column: 1 / 2;
           grid-row: 2;
         }
-  
+
         &:nth-child(3) {
           grid-column: 2;
           grid-row: 1 / 3;
         }
-  
+
         &:nth-child(4) {
           grid-column: 3 / 4;
           grid-row: 1;
         }
-  
+
         &:nth-child(5) {
           grid-column: 3 / 4;
           grid-row: 2;
@@ -216,7 +232,8 @@ main {
           display: flex;
           text-transform: uppercase;
 
-          p, a {
+          p,
+          a {
             display: flex;
             align-items: center;
             justify-content: center;
@@ -228,7 +245,7 @@ main {
             flex: 8;
             background-color: color(--primary-o-75);
             color: color(--bg);
-            padding: 10px 40px;
+            padding: 1rem 4rem;
           }
 
           button {
@@ -251,22 +268,28 @@ main {
     > div {
       display: flex;
 
+      @include for-tablet-landscape-up {
+        flex-direction: column;
+      }
+
       img {
+        width: 55rem;
+        height: 55rem;
         object-fit: cover;
-        
-        @include media(xl) {
-          width: 550px;
-          height: 550px;
+
+        @include for-tablet-landscape-up() {
+          width: 55rem;
+          height: 55rem;
         }
-        
-        @include media(xxl) {
-          width: 650px;
-          height: 650px;
+
+        @include for-desktop-up() {
+          width: 65rem;
+          height: 65rem;
         }
       }
 
       > div {
-        padding: 32px 0 32px 144px;
+        padding: 3.2rem 0 3.2rem 14.4rem;
 
         h3 {
           margin-bottom: 5rem;
@@ -280,9 +303,9 @@ main {
 
           button {
             text-transform: uppercase;
-            font-size: 20px;
+            font-size: 2rem;
             width: fit-content;
-            padding: 15px 30px;
+            padding: 1.5rem 3rem;
             border-radius: 8px;
             background-color: color(--primary);
             color: color(--bg);
@@ -323,7 +346,7 @@ main {
         left: 50%;
         transform: translate(-50%, -50%);
         color: color(--bg);
-        font-size: 60px;
+        font-size: 6rem;
         font-weight: 700;
         text-align: center;
         text-transform: uppercase;
@@ -334,7 +357,7 @@ main {
       filter: brightness(50%);
       object-fit: cover;
       width: 100%;
-      height: 450px;
+      height: 45rem;
     }
 
     .row {
@@ -355,7 +378,6 @@ main {
     }
   }
 }
-
 
 @keyframes marquee {
   0% {
