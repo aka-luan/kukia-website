@@ -4,22 +4,24 @@
 get_header();
 ?>
 
-<main class="container">
-  <div class="hero">
-    <h1 class="hero__heading">never miss a moment <br> again</h1>
-    <div class="hero__photos">
-      <div>
-        <img src="<?php echo get_template_directory_uri() ?>/resources/assets/heading_img.jpg" alt="" />
+<main>
+  <section class="hero">
+    <div class="container">
+      <h1 class="hero__heading">never miss a moment <br> again</h1>
+      <div class="hero__photos">
+        <div>
+          <img src="<?php echo get_template_directory_uri() ?>/resources/assets/heading_img.jpg" alt="" />
+        </div>
+        <div>
+          <img src="<?php echo get_template_directory_uri() ?>/resources/assets/heading_img3.jpg" alt="" />
+        </div>
       </div>
-      <div>
-        <img src="<?php echo get_template_directory_uri() ?>/resources/assets/heading_img3.jpg" alt="" />
-      </div>
+      <h2 class="hero__subheading">Full-service studio: Kúkia handles event coverage to brand videos</h2>
     </div>
-    <h2 class="hero__subheading">Full-service studio: Kúkia handles event coverage to brand videos</h2>
-  </div>
+  </section>
 
   <div class="marquee">
-    <div class="marquee__text">
+    <div class="marquee-content">
       <span><i class="fas fa-star fa-lg"></i>
         <p>pro photographers</p>
       </span>
@@ -27,27 +29,27 @@ get_header();
         <p>creative photography</p>
       </span>
       <span><i class="fas fa-star fa-lg"></i>
-        <p>pro photographers</p>
+        <p>Innovative Impressions</p>
       </span>
       <span><i class="fas fa-star fa-lg"></i>
-        <p>creative photography</p>
-      </span>
-    </div>
-    <div class="marquee__text">
-      <span><i class="fas fa-star fa-lg"></i>
-        <p>pro photographers</p>
+        <p>Creative Composition</p>
       </span>
       <span><i class="fas fa-star fa-lg"></i>
-        <p>creative photography</p>
+        <p>Eternal Moments</p>
       </span>
       <span><i class="fas fa-star fa-lg"></i>
-        <p>pro photographers</p>
-      </span>
-      <span><i class="fas fa-star fa-lg"></i>
-        <p>creative photography</p>
-      </span>
+        <p>Visionary Frames</p>
+        <span><i class="fas fa-star fa-lg"></i>
+          <p>Artistic Perspectives</p>
+        </span>
+        <span><i class="fas fa-star fa-lg"></i>
+          <p>Emotion Capture</p>
+          <span><i class="fas fa-star fa-lg"></i>
+            <p>Storytelling Clicks</p>
+          </span>
     </div>
   </div>
+
   <div class="recent_work">
     <h3>our recent work</h3>
     <div class="recent_work__grid">
