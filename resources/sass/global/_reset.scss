@@ -43,15 +43,11 @@ body {
   min-height: 100vh;
   background-color: color(--bg);
 
-  @include for-tablet-portrait-up {
-    font-size: 40%;
-  }
-
   @include for-tablet-landscape-up() {
     font-size: 50%;
   }
 
-  @include for-tablet-landscape-up() {
+  @include for-desktop-up() {
     font-size: 62.5%;
   }
 }
@@ -64,14 +60,9 @@ body {
 
   h3 {
     font-weight: 700;
-    font-size: 9.6rem;
-
-    // @include for-tablet-portrait-up(){
-    //   font-size: 84px;
-    // }
-
-    // @include for-tablet-landscape-up(){
-    // }
+    font-size: clamp(4rem, 1rem + 7vw, 9rem);
+    text-align: center;
+    
   }
 
   p,
@@ -89,6 +80,13 @@ body {
  */
 
 // container
+.container {
+  width: 95%;
+
+  @include for-tablet-landscape-up() {
+    width: 85%;
+  }
+}
 
 // Tooltips
 .tooltip {
