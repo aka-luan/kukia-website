@@ -32,7 +32,7 @@ header {
         font-size: 2rem;
         
         @include for-tablet-landscape-up() {
-          font-size: 1rem;
+          font-size: 4rem;
         }
       }
 
@@ -45,7 +45,7 @@ header {
         bottom: 0;
         left: 0;
         transition: 0.5s;
-        background-color: color(--primary-o-95);
+        background-color: color(--primary);
         text-align: center;
 
         li {
@@ -76,7 +76,7 @@ header {
           font-weight: 700;
           position: relative;
           top: 20%;
-          font-size: 3rem;
+          font-size: clamp(2.5rem, 5vw, 6rem);
 
           li:not(:first-child) {
             margin-top: 2.8rem;
@@ -91,7 +91,7 @@ header {
           transition: 0.3s;
 
           i {
-            font-size: 3rem;
+            font-size: clamp(2.5rem, 5vw, 6rem);
           }
 
           &:hover {
