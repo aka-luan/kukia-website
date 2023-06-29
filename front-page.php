@@ -39,14 +39,16 @@ get_header();
       </span>
       <span><i class="fas fa-star fa-lg"></i>
         <p>Visionary Frames</p>
-        <span><i class="fas fa-star fa-lg"></i>
-          <p>Artistic Perspectives</p>
-        </span>
-        <span><i class="fas fa-star fa-lg"></i>
-          <p>Emotion Capture</p>
-          <span><i class="fas fa-star fa-lg"></i>
-            <p>Storytelling Clicks</p>
-          </span>
+      </span>
+      <span><i class="fas fa-star fa-lg"></i>
+        <p>Artistic Perspectives</p>
+      </span>
+      <span><i class="fas fa-star fa-lg"></i>
+        <p>Emotion Capture</p>
+      </span>
+      <span><i class="fas fa-star fa-lg"></i>
+        <p>Storytelling Clicks</p>
+      </span>
     </div>
   </div>
 

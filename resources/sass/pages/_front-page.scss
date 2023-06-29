@@ -98,29 +98,35 @@ main {
   }
 
   .marquee {
+    display: flex;
     overflow: hidden;
     width: 100%;
     background-color: color(--primary);
-    padding: clamp(1.5rem, 5vh, 4rem) 0;
+    padding: clamp(1rem, 4vh, 3rem) 0;
     text-transform: uppercase;
     color: color(--bg);
-
+    gap: 10em;
+    
     .marquee-content {
       display: flex;
+      padding-left: 100%;
+      animation: marquee 15s linear infinite;
       white-space: nowrap;
-      animation: marquee 5s linear infinite;
-      gap: 1em;
+      gap: 2em;
 
       span {
-        font-size: clamp(1rem, 3vw, 2rem);
+        font-size: clamp(1rem, 3vw, 1.5rem);
         gap: 0.5em;
         display: flex;
         align-items: center;
 
         p {
-          font-size: clamp(2rem, 5vw, 4rem);
-          font-weight: 700;
+          font-size: clamp(2rem, 5vw, 3rem);
         }
+      }
+
+      &:hover {
+        animation-play-state: paused;
       }
 
       @keyframes marquee {
