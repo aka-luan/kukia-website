@@ -52,7 +52,7 @@ get_header();
     </div>
   </div>
 
-  <div class="recent_work">
+  <div class="recent_work container">
     <h3>our recent work</h3>
     <div class="recent_work__grid">
       <div class="recent_work__figure">
