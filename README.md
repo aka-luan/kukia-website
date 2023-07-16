@@ -1,52 +1,64 @@
-# Larapress
+# Kukia-Website
 
-Blank WordPress Theme inspired by Laravel, based on [Underscores](https://underscores.me).
+Kukia-Website is a repository dedicated to the study and practice of WordPress theme creation, CSS layouts, and UI development. The project uses a variety of technologies such as HTML, SASS, PHP, JavaScript, and Larapress. Larapress is a blank WordPress theme inspired by Laravel and based on Underscores.
 
-## Requisites
+## Requirements
 
 - WordPress ^5.9
 - PHP ^7.4
 - Node.js ^14.16.1
 - NPM ^6.14.12
 
-## Installation
+## Getting Started
 
-Clone the repo inside the `your-project\wp-content\themes` folder then `cd` to `/larapress`:
+To begin working with the Kukia-Website repository, follow these installation steps:
 
-```bash
-  git clone https://github.com/ojvribeiro/larapress.git larapress
+### Installation
+
+1. Clone the repository inside your project's `wp-content/themes` directory and then navigate to the `larapress` directory:
+
+```
+git clone https://github.com/your-username/kukia-website.git kukia-website
+cd kukia-website
 ```
 
-```bash
-  cd larapress
+2. Remove the .git folder to clear the repository's history. If necessary, you can then initialize a new git repository:
+
+```
+rm -rf .git
+git init
 ```
 
-Remove the `.git` folder. Start a new repo if necessary:
+3. Install all necessary dependencies with npm:
 
-```bash
-  rm -rf .git
+```
+npm install
 ```
 
-```bash
-  git init
+### Development
+
+While developing, use Laravel Mix to bundle your assets:
+
+```
+npm run watch
 ```
 
-## Installing dependecies
+Larapress uses Laravel Mix to compile assets for development. 
 
-```bash
-  npm install
+### Production
+
+When you're ready to prepare your code for production, use the following command:
+
+```
+npm run prod
 ```
 
-## Compiling assets
+This command will optimize your code for a production environment.
 
-```bash
-  npm run watch
-```
+## Contribute
 
-Larapress uses Laravel Mix for bundling assets.
+If you want to contribute to this project and make it better, your help is very welcome. Create a pull request with your suggested changes.
 
-## Optimizing for production
+## License
 
-```bash
-  npm run prod
-```
+This project is licensed under the MIT License.
