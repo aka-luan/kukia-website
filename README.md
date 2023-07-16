@@ -1,6 +1,6 @@
 # Kukia-Website
 
-Kukia-Website is a repository dedicated to the study and practice of WordPress theme creation, CSS layouts, and UI development. The project uses a variety of technologies such as HTML, SASS, PHP, JavaScript, and Larapress. Larapress is a blank WordPress theme inspired by Laravel and based on Underscores.
+Kukia-Website is a repository dedicated to the study and practice of WordPress theme creation, CSS responsive layouts, and UI development. The project uses a variety of technologies such as HTML, SASS, PHP, JavaScript, and Larapress. Larapress is a blank WordPress theme inspired by Laravel and based on Underscores.
 
 ## Requirements
 
@@ -18,7 +18,7 @@ To begin working with the Kukia-Website repository, follow these installation st
 1. Clone the repository inside your project's `wp-content/themes` directory and then navigate to the `larapress` directory:
 
 ```
-git clone https://github.com/your-username/kukia-website.git kukia-website
+git clone https://github.com/aka-luan/kukia-website.git kukia-website
 cd kukia-website
 ```
 
